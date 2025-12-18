@@ -1,6 +1,0 @@
-Model,Test_Accuracy,Test_Recall,Test_F1,Test_ROC-AUC,Train_Accuracy,Train_Recall,Overfit_Gap,Overfit_Level,Time(s)
-Random Forest,0.9955,0.9718,0.9857,0.9978,1.0000,1.0000,0.0123,Excellent (No overfitting),0.16
-Decision Tree,0.9070,0.7958,0.7338,0.9319,0.9706,0.9777,0.1356,High (Significant overfitting),0.06
-Logistic Regression,0.8186,0.5845,0.5092,0.7758,0.8214,0.7966,0.1612,High (Significant overfitting),0.06
-SVM,0.9286,0.7887,0.7805,0.9579,0.9777,0.9855,0.1208,High (Significant overfitting),4.01
-Perceptron,0.7177,0.5211,0.3728,0.7067,0.7499,0.7215,0.1791,High (Significant overfitting),0.01
