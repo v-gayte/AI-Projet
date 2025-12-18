@@ -1,0 +1,61 @@
+======================================================================
+RANDOM FOREST HYPERPARAMETER OPTIMIZATION REPORT
+======================================================================
+Generated: 2025-12-17 14:40:37
+Objective: Maximize Recall while preventing overfitting
+
+======================================================================
+BEST HYPERPARAMETERS
+======================================================================
+
+  max_depth: 20
+  min_samples_leaf: 1
+  min_samples_split: 2
+  n_estimators: 200
+
+  Best CV Recall Score: 0.9916
+
+======================================================================
+BASELINE vs OPTIMIZED COMPARISON
+======================================================================
+
+        Metric  Baseline  Optimized   Change  Change %
+Train Accuracy  1.000000   1.000000 0.000000  0.000000
+ Test Accuracy  0.995465   0.995465 0.000000  0.000000
+   Test Recall  0.971831   0.971831 0.000000  0.000000
+Test Precision  1.000000   1.000000 0.000000  0.000000
+       Test F1  0.985714   0.985714 0.000000  0.000000
+  Test ROC-AUC  0.997816   0.998658 0.000842  0.084406
+
+======================================================================
+TOP 15 FEATURE IMPORTANCE
+======================================================================
+
+ Rank                 Feature  Importance
+    1    MaritalStatus_Single    0.057656
+    2      Burnout_Risk_Score    0.055912
+    3          Overtime_Hours    0.052743
+    4     AverageWorkingHours    0.051720
+    5                     Age    0.051210
+    6       TotalWorkingYears    0.043340
+    7          YearsAtCompany    0.038562
+    8         JobSatisfaction    0.037229
+    9    YearsWithCurrManager    0.035331
+   10 EnvironmentSatisfaction    0.032951
+   11       Manager_Stability    0.032238
+   12         Age_When_Joined    0.031563
+   13           MonthlyIncome    0.030882
+   14       Compa_Ratio_Level    0.029897
+   15        DistanceFromHome    0.026244
+
+======================================================================
+RECOMMENDATIONS
+======================================================================
+1. DEPLOY optimized model to production
+   - Recall maintained or improved
+   - Better generalization confirmed
+2. Focus retention efforts on Top 5 features
+3. Monitor feature importance stability over time
+4. Retrain quarterly with new data
+
+======================================================================

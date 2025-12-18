@@ -205,3 +205,4 @@ print("\nTop 3 Job Roles with Lowest Attrition:")
 for i, (role, rate) in enumerate(jobrole_attrition.tail(3).items(), 1):
     print(f"  {i}. {role}: {rate*100:.2f}%")
 
+
